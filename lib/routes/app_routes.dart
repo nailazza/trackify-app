@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import '../pages/home_page.dart';
 import '../pages/add_activity_page.dart';
 import '../pages/detail_activity_page.dart';
 import '../pages/edit_activity_page.dart';
 import '../pages/dashboard_page.dart';
+import '../pages/welcome_page.dart';
+import '../pages/main_home_page.dart';
 import '../models/activity.dart';
 
 class AppRoutes {
-  static const home = '/';
+  static const welcome = '/';
+  static const mainHome = '/main_home';
   static const addActivity = '/add';
   static const detailActivity = '/detail';
   static const editActivity = '/edit';
@@ -15,8 +17,11 @@ class AppRoutes {
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case home:
-        return MaterialPageRoute(builder: (_) => const HomePage());
+      case welcome:
+        return MaterialPageRoute(builder: (_) => const WelcomePage());
+
+      case mainHome:
+        return MaterialPageRoute(builder: (_) => const MainHomePage());
 
       case addActivity:
         return MaterialPageRoute(builder: (_) => const AddActivityPage());

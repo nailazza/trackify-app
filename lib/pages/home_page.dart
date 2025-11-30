@@ -47,16 +47,6 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
         ),
-        actions: [
-          IconButton(
-            tooltip: 'Dashboard',
-            icon: const Icon(Icons.bar_chart_rounded, size: 26),
-            onPressed: () {
-              Navigator.pushNamed(context, '/dashboard');
-            },
-          ),
-          const SizedBox(width: 8),
-        ],
       ),
 
       body: loading
