@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "builds": [
-    { "src": "web_dist/index.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/web_dist/index.html" }
-  ]
-}
