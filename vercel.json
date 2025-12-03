@@ -1,5 +1,6 @@
 {
   "buildCommand": "flutter build web --release",
-  "outputDirectory": "build/web",
+  "outputDirectory": "/web_dist/index.html",
   "framework": null
 }
+
