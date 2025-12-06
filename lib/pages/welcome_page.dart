@@ -71,12 +71,6 @@ class WelcomePage extends StatelessWidget {
                   subtitle:
                       'Monitor waktu yang dihabiskan untuk setiap kategori',
                 ),
-                const SizedBox(height: 18),
-                _featureItem(
-                  icon: Icons.notifications_active,
-                  title: 'Pengingat',
-                  subtitle: 'Dapatkan notifikasi untuk aktivitas penting',
-                ),
                 const Spacer(),
 
                 // Start Button
